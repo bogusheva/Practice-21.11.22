@@ -1,0 +1,14 @@
+.hero-container {
+  h1 {
+    font-family: $font-family-main, $font-family-fallback;
+    font-size: $font-h1m;
+    font-weight: $weight-semi;
+    color: $base-black;
+    line-height: 1.2;
+    letter-spacing: $space-5;
+    padding-bottom: 40px;
+  }
+  .hero-image-holder {
+    padding: 40px 0 70px;
+  }
+}

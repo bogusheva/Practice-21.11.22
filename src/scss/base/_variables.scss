@@ -1,0 +1,43 @@
+//Breakpoints for forming queries for different modes: mobile, tablet, desktop
+$width-tablet: 1024px;
+$width-mobile: 768px;
+
+// colors
+$base-black: #000000;
+$base-white: #ffffff;
+
+$grey-900: #323232;
+$grey-700: #565656;
+$grey-500: #7b7b7b;
+$grey-300: #cccccc;
+$grey-100: #f4f4f4;
+
+$error: #e10000;
+
+//font-family
+$font-family-main: "red_hat_display";
+$font-family-second: "lato";
+$font-family-fallback: sans-serif;
+
+// font-size
+$font-h1: 48px;
+$font-h2: 36px;
+$font-h1m: 30px;
+$font-h3: 28px;
+$font-h2m: 26px;
+$font-h4: 23px;
+$font-h5: 18px;
+$font-h6: 16px;
+$font-h7: 14px;
+$font-h8: 12px;
+
+//font-weight
+$weight-regular: 400;
+$weight-medium: 500;
+$weight-semi: 600;
+$weight-bold: 700;
+
+//letter spaces
+$space-1: 0.1rem;
+$space-3: 0.3rem;
+$space-5: 0.5rem;

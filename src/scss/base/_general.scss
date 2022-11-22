@@ -1,0 +1,85 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+footer {
+  background-color: $grey-100;
+  padding: 50px 10px;
+  @include desktop-view {
+    padding: 70px 135px 0;
+  }
+}
+
+h2 {
+  font-family: $font-family-main;
+  font-size: $font-h2m;
+  font-weight: $weight-semi;
+  line-height: 1.65;
+  letter-spacing: $space-1;
+  padding-bottom: 40px;
+  @include desktop-view {
+    padding-bottom: 50px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $base-black;
+}
+
+.body-holder {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hero-container,
+.section-container {
+  text-align: left;
+  padding: 0;
+  padding-bottom: 70px;
+  @include desktop-view {
+    padding-bottom: 90px;
+  }
+}
+section:first-child,
+section:last-child {
+  @include tablet-view {
+    padding-bottom: 90px;
+  }
+}
+section:nth-child(2) {
+  @include desktop-view {
+    max-width: 570px;
+  }
+}
+.main-holder {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-holder {
+  padding-top: 20px;
+  font-family: $font-family-second, $font-family-fallback;
+  font-size: $font-h6;
+  font-weight: $weight-regular;
+  line-height: 2;
+  letter-spacing: $space-5;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.container {
+  padding: 0 10px;
+  @include tablet-view {
+    padding: 0 34px;
+  }
+  @include desktop-view {
+    padding: 0 135px;
+  }
+}

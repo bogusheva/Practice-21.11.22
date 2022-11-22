@@ -1,0 +1,73 @@
+.footer-holder {
+  width: 100%;
+  text-align: center;
+  justify-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: $font-h5;
+  line-height: 1.7;
+  letter-spacing: $space-1;
+  text-align: center;
+  padding-bottom: 40px;
+
+  gap: 40px;
+  @include desktop-view {
+    padding-bottom: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  h2 {
+    font-family: $font-family-main, $font-family-fallback;
+    font-size: $font-h2m;
+    font-weight: $weight-regular;
+    line-height: 1.5;
+    letter-spacing: $space-5;
+    padding-bottom: 20px;
+  }
+
+  .socials-holder {
+    display: flex;
+    margin: 0 auto;
+    gap: 23px;
+    @include desktop-view {
+      justify-items: right;
+      margin: 0;
+      padding-top: 20px;
+    }
+
+    .instagram-icon-holder,
+    .facebook-icon-holder,
+    .twitter-icon-holder,
+    .linkedin-icon-holder {
+      width: 50px;
+      height: 50px;
+      border: 1px solid $grey-700;
+      align-items: center;
+      padding: 11px 13px 15px;
+      border-radius: 5px;
+      color: $grey-700;
+
+      &:hover {
+        background-color: $grey-500;
+        color: $base-white;
+      }
+    }
+  }
+}
+
+.copyright-holder {
+  font-family: $font-family-second, $font-family-fallback;
+  font-size: $font-h8;
+  font-weight: $weight-regular;
+  line-height: 1.5;
+  letter-spacing: $space-1;
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+
+  @include desktop-view {
+    max-width: 800px;
+    padding: 20px 0 30px;
+  }
+}

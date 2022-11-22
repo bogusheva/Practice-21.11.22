@@ -1,0 +1,42 @@
+.section-description {
+  @include desktop-view {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    vertical-align: baseline;
+  }
+  .section-title-holder {
+    @include tablet-view {
+      flex-direction: column;
+    }
+    @include desktop-view {
+      width: 60%;
+      gap: 10px;
+      justify-content: flex-start;
+    }
+  }
+  .section-heading {
+    font-family: $font-family-main, $font-family-fallback;
+    font-size: $font-h4;
+    font-weight: $weight-regular;
+    line-height: 1.8;
+    letter-spacing: $space-1;
+  }
+
+  .description-text {
+    font-family: $font-family-second, $font-family-fallback;
+    font-size: $font-h5;
+    font-weight: $weight-regular;
+    line-height: 1.7;
+    letter-spacing: $space-1;
+    padding-top: 35px;
+    @include tablet-view {
+      text-align: right;
+    }
+    @include desktop-view {
+      padding-top: 0;
+      width: 40%;
+      text-align: justify;
+    }
+  }
+}
